@@ -1,0 +1,35 @@
+Fresh Rails Install with User Model Scaffold
+
+1. Removed /public/index.html file
+2. Generated User Scaffold - rails generate scaffold User email:string name:string password:string
+ a. User Model File Created - /models/user.rb
+ b. Users Controller Created - /controllers/users_controller.rd
+ c. Migration File Created - 
+	t.string :email
+	t.string :name
+	t.string :password
+	t.timestamps
+ d. Database Migration for Users - rake db:migrate has been run on 20130220060742_create_users.rb
+3. root :to => 'users#index' set in /config/routes.rb file.
+4. bundle install - has been run in order to install gems below & dependancies
+
+In order to run the Fresh Rails Install App you will need to:
+1. bundle install - to install rails gems and dependancies
+2. Start the server and visit http://localhost:3000 in browser.
+
+Installed Gems:
+group :development do
+  gem "better_errors"
+  gem "binding_of_caller"
+  gem "meta_request"
+end
+
+Raked Routes: rake routes
+    users GET    /users(.:format)          users#index
+          POST   /users(.:format)          users#create
+ new_user GET    /users/new(.:format)      users#new
+edit_user GET    /users/:id/edit(.:format) users#edit
+     user GET    /users/:id(.:format)      users#show
+          PUT    /users/:id(.:format)      users#update
+          DELETE /users/:id(.:format)      users#destroy
+     root        /                         users#index
