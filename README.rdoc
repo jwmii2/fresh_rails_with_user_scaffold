@@ -29,3 +29,5 @@ In order to run the Fresh Rails Install App you will need to:
               PUT    /users/:id(.:format)      users#update
               DELETE /users/:id(.:format)      users#destroy
          root        /                         users#index
+
+### View Wiki for more information & download zip archive link.
