@@ -13,19 +13,19 @@ In order to run the Fresh Rails Install App you will need to:
 1. bundle install - to install rails gems and dependancies
 2. Start the server and visit http://localhost:3000 in browser.
 
-Installed Gems:
-group :development do
-  gem "better_errors"
-  gem "binding_of_caller"
-  gem "meta_request"
-end
+    Installed Gems:
+    group :development do
+      gem "better_errors"
+      gem "binding_of_caller"
+      gem "meta_request"
+    end
 
-Raked Routes: rake routes
-    users GET    /users(.:format)          users#index
-          POST   /users(.:format)          users#create
- new_user GET    /users/new(.:format)      users#new
-edit_user GET    /users/:id/edit(.:format) users#edit
-     user GET    /users/:id(.:format)      users#show
-          PUT    /users/:id(.:format)      users#update
-          DELETE /users/:id(.:format)      users#destroy
-     root        /                         users#index
+    Raked Routes: rake routes
+        users GET    /users(.:format)          users#index
+              POST   /users(.:format)          users#create
+     new_user GET    /users/new(.:format)      users#new
+    edit_user GET    /users/:id/edit(.:format) users#edit
+         user GET    /users/:id(.:format)      users#show
+              PUT    /users/:id(.:format)      users#update
+              DELETE /users/:id(.:format)      users#destroy
+         root        /                         users#index
