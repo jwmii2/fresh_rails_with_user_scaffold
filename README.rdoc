@@ -4,11 +4,7 @@ Fresh Rails Install with User Model Scaffold
 2. Generated User Scaffold - rails generate scaffold User email:string name:string password:string
  a. User Model File Created - /models/user.rb
  b. Users Controller Created - /controllers/users_controller.rd
- c. Migration File Created - 
-	t.string :email
-	t.string :name
-	t.string :password
-	t.timestamps
+ c. Migration File Created - t.string :email, t.string :name, t.string :password, t.timestamps
  d. Database Migration for Users - rake db:migrate has been run on 20130220060742_create_users.rb
 3. root :to => 'users#index' set in /config/routes.rb file.
 4. bundle install - has been run in order to install gems below & dependancies
